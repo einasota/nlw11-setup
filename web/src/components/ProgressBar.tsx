@@ -13,7 +13,7 @@ export function ProgressBar(props: ProgressBarProps) {
         <Progress.Root className="h-3 rounded-xl bg-zinc-700 w-full mt-4 overflow-hidden relative">
             <Progress.Indicator
                 style={{ width: percentual}}
-                className={clsx("h-3 rounded-xl", {
+                className={clsx("h-3 rounded-xl transition-all duration-500", {
                     'bg-zinc-900': colorPercentual === 0,
                 'bg-violet-900': colorPercentual > 0 && colorPercentual < 20,
                 'bg-violet-800': colorPercentual >= 20 && colorPercentual < 40,
